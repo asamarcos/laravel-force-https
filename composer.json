@@ -1,5 +1,5 @@
 {
-    "name": "lsv/laravel-force-https",
+    "name": "lucasvscn/laravel-force-https",
     "description": "Patch to force every request to be made with https.",
     "keywords": ["laravel", "https"],
     "license": "MIT",
