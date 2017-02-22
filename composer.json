@@ -1,0 +1,28 @@
+{
+    "name": "lsv/laravel-force-https",
+    "description": "Patch to force every request to be made with https.",
+    "keywords": ["laravel", "https"],
+    "license": "MIT",
+    "homepage": "https://github.com/lucasvscn/laravel-force-https",
+    "support": {
+        "issues": "https://github.com/lucasvscn/laravel-force-https/issues",
+        "source": "https://github.com/lucasvscn/laravel-force-https"
+    },
+    "authors": [
+        {
+            "name": "Lucas Vasconcelos",
+            "email": "lucas@vscn.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LSV\\ForceHttps\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "^5.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
