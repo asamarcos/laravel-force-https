@@ -13,5 +13,5 @@ Register the ServiceProvider in `config/app.php`
     'providers' => [
 
         // ...
-        LSV\ForceHttps\ServiceProvider::class,
+        LucasVscn\ForceHttps\ServiceProvider::class,
     ];
