@@ -1,12 +1,12 @@
 <?php
 
-namespace LSV\ForceHttps;
+namespace LucasVscn\ForceHttps;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 /**
  * @author  Lucas Vasconcelos <lucas@vscn.co>
- * @package  LSV\ForceHttps
+ * @package  LucasVscn\ForceHttps
  */
 class ServiceProvider extends LaravelServiceProvider
 {
@@ -30,7 +30,7 @@ class ServiceProvider extends LaravelServiceProvider
     public function register()
     {
         // Overrides the service redirect by our modified version.
-        $this->app['redirect'] = $this->app->share(function ($app) {
+        $this->app->singleton('redirect', function ($app) {
             $redirector = new Redirector($app['url']);
 
             // If the session is set on the application instance, we'll inject it into

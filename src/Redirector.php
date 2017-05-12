@@ -1,12 +1,12 @@
 <?php
 
-namespace LSV\ForceHttps;
+namespace LucasVscn\ForceHttps;
 
 use Illuminate\Routing\Redirector as LaravelRedirector;
 
 /**
  * @author  Lucas Vasconcelos <lucas@vscn.co>
- * @package LSV\ForceHttps
+ * @package LucasVscn\ForceHttps
  */
 class Redirector extends LaravelRedirector
 {
