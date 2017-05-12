@@ -18,7 +18,7 @@ class ServiceProvider extends LaravelServiceProvider
     public function boot()
     {
         if (! $this->app->isLocal()) {
-            url()->forceSchema("https");
+            url()->forceScheme("https");
         }
     }
 
